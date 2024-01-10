@@ -12,19 +12,20 @@
     "resolveJsonModule": true,
     "types": [
       "vitest",
-      "vite/client",
+      "vite/client"
     ],
     "allowJs": true,
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
+    "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
   "exclude": [
-    "dist", 
-    "node_modules",
+    "dist",
+    "node_modules"
   ]
 }
