@@ -1,0 +1,18 @@
+# http://editorconfig.org
+# 最顶层的配置文件
+root = true
+
+# 适用所有文件
+[*]
+# 设置文件字符集为 utf-8
+charset = utf-8
+# 缩进风格（tab | space）
+indent_style = space
+# 缩进大小
+indent_size = 2
+# 控制换行类型（lf | cr | crlf）
+end_of_line = lf
+# 始终在文件末尾插入一个新行
+insert_final_newline = true
+# 去除行尾的任意空白字符
+trim_trailing_whitespace = true
