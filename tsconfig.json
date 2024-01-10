@@ -1,29 +1,49 @@
 {
+  // 编译器选项
   "compilerOptions": {
+    // 遵循版本
     "target": "ESNext",
+    // 输出文件会带有 .jsx 扩展名
     "jsx": "preserve",
+    // 库
     "lib": ["DOM", "ESNext"],
+    // 基础路径
     "baseUrl": ".",
+    // 模块系统
     "module": "ESNext",
+    // 模块解析策略
     "moduleResolution": "node",
+    // 路径
     "paths": {
       "@/*": ["src/*"]
     },
+    // 解析 JSON 模块
     "resolveJsonModule": true,
+    // 类型
     "types": [
       "vitest",
       "vite/client"
     ],
+    // 允许 js
     "allowJs": true,
+    // 严格类型检查
     "strict": true,
+    // 严格的空检查
     "strictNullChecks": true,
+    // 报告未使用的局部变量的错误
     "noUnusedLocals": true,
+    // 输出目录
     "outDir": "./dist",
+    // 倒入 CommonJS 模块像 ES 模块一样使用 import
     "esModuleInterop": true,
+    // 强制文件名大小写一致
     "forceConsistentCasingInFileNames": true,
+    // 隔离模块
     "isolatedModules": true,
+    // 跳过库检查
     "skipLibCheck": true
   },
+  // 排除
   "exclude": [
     "dist",
     "node_modules"
