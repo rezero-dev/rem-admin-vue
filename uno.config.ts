@@ -24,6 +24,13 @@ export default defineConfig({
     'transition-base': 'transition !duration-300',
     'wh-full': 'w-full h-full',
   },
+  theme: {
+    extend: {
+      transitionProperty: {
+        left: 'left',
+      },
+    },
+  },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
