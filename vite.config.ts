@@ -11,6 +11,7 @@ import Vue from '@vitejs/plugin-vue'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import VueJsx from '@vitejs/plugin-vue-jsx'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 /**
  * 创建全局常量
@@ -77,6 +78,14 @@ export default defineConfig(async ({ mode }: ConfigEnv) => {
           'pinia',
           'vitest',
           '@vueuse/core',
+          {
+            'naive-ui': [
+              'useDialog',
+              'useMessage',
+              'useNotification',
+              'useLoadingBar',
+            ],
+          },
         ],
         dts: 'src/types/auto-imports.d.ts',
         dirs: [
@@ -89,6 +98,7 @@ export default defineConfig(async ({ mode }: ConfigEnv) => {
 
       // https://github.com/antfu/unplugin-vue-components
       Components({
+        resolvers: [NaiveUiResolver()],
         extensions: ['vue'],
         include: [/\.vue$/, /\.vue\?vue/],
         dts: 'src/types/components.d.ts',

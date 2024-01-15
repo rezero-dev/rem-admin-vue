@@ -22,7 +22,8 @@
     // 类型
     "types": [
       "vitest",
-      "vite/client"
+      "vite/client",
+      "naive-ui/volar"
     ],
     // 允许 js
     "allowJs": true,
